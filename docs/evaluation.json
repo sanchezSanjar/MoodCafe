@@ -1,0 +1,38 @@
+{
+  "dataset": "AutumnQiu/fer2013 (test split)",
+  "faces": 3589,
+  "accuracy_7_expressions": 0.717,
+  "accuracy_per_expression": {
+    "angry": 0.599,
+    "disgust": 0.673,
+    "fear": 0.553,
+    "happy": 0.908,
+    "sad": 0.63,
+    "surprise": 0.791,
+    "neutral": 0.719
+  },
+  "happy_threshold": {
+    "0.5": {
+      "smiles_caught": 0.901,
+      "non_smiles_flagged": 0.022,
+      "precision": 0.93
+    },
+    "0.7": {
+      "smiles_caught": 0.882,
+      "non_smiles_flagged": 0.016,
+      "precision": 0.947
+    },
+    "0.8": {
+      "smiles_caught": 0.865,
+      "non_smiles_flagged": 0.014,
+      "precision": 0.951
+    },
+    "0.9": {
+      "smiles_caught": 0.828,
+      "non_smiles_flagged": 0.008,
+      "precision": 0.969
+    }
+  },
+  "ms_per_face": 4.94,
+  "device": "NVIDIA GeForce RTX 3060 Laptop GPU"
+}
