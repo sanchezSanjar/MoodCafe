@@ -17,10 +17,10 @@ set PY=.venv\Scripts\python.exe
 where nvidia-smi >nul 2>nul && nvidia-smi >nul 2>nul
 if errorlevel 1 (
   echo No NVIDIA GPU found - installing CPU PyTorch.
-  "%PY%" -m pip install torch torchvision
+  "%PY%" -m pip install torch
 ) else (
   echo NVIDIA GPU found - installing GPU ^(CUDA^) PyTorch. This is a large download.
-  "%PY%" -m pip install torch torchvision --index-url %CUDA_INDEX% || "%PY%" -m pip install torch torchvision
+  "%PY%" -m pip install torch --index-url %CUDA_INDEX% || "%PY%" -m pip install torch
 )
 "%PY%" -m pip install -r requirements.txt
 "%PY%" scripts\download_models.py

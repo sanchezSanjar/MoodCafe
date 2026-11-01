@@ -3,12 +3,12 @@ __pycache__/
 *.pyc
 
 # Downloaded at setup (scripts/download_models.py)
-models/face_detection_yunet.onnx
+models/
 
-# Training data and checkpoints (built by moodcafe.data / moodcafe.train)
+# Evaluation data cache
 data/
-runs/
 
 # Runtime files
 moodcafe.log
+moodcafe.port
 coupons.csv
