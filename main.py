@@ -3,8 +3,10 @@ print("Hello World!")
 import cv2
 
 cap =cv2.VideoCapture(0)
+if not cap.isOpened():
+    raise SystemExit("No camera found. Connect a webcam and try again.")
 
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascade + "haarcascade_frontalface_default.xml")
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 
 while True:
     success, frame = cap.read()
