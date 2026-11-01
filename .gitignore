@@ -1,3 +1,14 @@
 .venv/
 __pycache__/
 *.pyc
+
+# Downloaded at setup (scripts/download_models.py)
+models/face_detection_yunet.onnx
+
+# Training data and checkpoints (built by moodcafe.data / moodcafe.train)
+data/
+runs/
+
+# Runtime files
+moodcafe.log
+coupons.csv

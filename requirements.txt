@@ -1,0 +1,6 @@
+# PyTorch and torchvision are installed by INSTALL_WINDOWS.bat (GPU build when an NVIDIA card is present).
+opencv-python>=4.8
+numpy>=1.24
+Pillow>=10.0
+# Training only
+datasets>=2.20
